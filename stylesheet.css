@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0.05rem auto;
+    padding: 20px;
+    /* border-radius: 18px; */
+    box-shadow: 3px 3px 5px 4px rgb(126, 124, 73);
+    background-color: rgb(245, 119, 119);
+  }
+  
+  h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"] {
+    margin: 10px 20%;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+
+  button[type="button"] {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(74, 74, 225);
+    border: none;
+  }
+
+  button[type="button"]:hover{
+    background-color: rgb(35, 35, 221);
+  }
+
+
+  .imageTag{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .liTagList{
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+  }
+
+  .nameTag{
+    margin: 0.6rem 0;
+    display: block;
+    font-size: 14px;
+  }
+
+  .phoneNumTag{
+    font-size: 14px;
+  }
+
+  .addBtn{
+    margin: 0.65rem 30%;
+  }
+
+
+  
