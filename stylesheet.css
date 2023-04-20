@@ -6,54 +6,188 @@
 }
 
 body{
-    background-color: #f2f2f2;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.container {
-    max-width: 600px;
-    margin: 0.05rem auto;
-    padding: 20px;
-    /* border-radius: 18px; */
-    box-shadow: 3px 3px 5px 4px rgb(126, 124, 73);
-    background-color: rgb(245, 119, 119);
-  }
+.container{
+  margin: 10px auto;
+  padding: 1rem;
+  background-color: rgb(55, 55, 62);
+  max-width: 950px;
+  height: auto;
+}
   
-  h1 {
-    font-size: 2em;
-    text-align: center;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
+.header{
+  margin: 1rem 20%;
+  padding: 0.7rem 1.5rem;
+  /* border: 1px solid red; */
+  background-color: rgb(232, 234, 239);
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.inner-wrapper{
+  margin: 1.5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+}
+
+
+.right-aside{
+  display: flex;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+}
+
+.addForm{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(70, 92, 151);
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 600px;
+  height: auto;
+}
+
+.addForm input{
+  padding: 0.5rem;
+  margin: 8px;
+}
+
+.addForm #right-button{
+  padding: 0.6rem 1rem;
+  margin: 10px auto;
+}
+
+.addForm .inputName{
+  margin-left: 10.9px;
+}
+
+.addForm .inputEmail{
+  margin-left: 14.9px;
+}
+
+.list-wrap{
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+
+.right-button a{
+  text-decoration: none;
+  color: black;
+}
+
+.left-aside{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.left-aside .left-button{
+  padding: 1rem;
+  margin: 10px auto;
+}
+
+.left-button-two{
+  padding: 1rem;
+  margin: 3rem auto;
+}
+
+.left-button{
+  width: 120px;
+}
+
+.left-button a{
+  text-decoration: none;
+  color: black;
+}
+
+.left-button-two a{
+  text-decoration: none;
+  color: black;
+}
+
+.searchWrap{
+  margin: 0 2rem;
+  /* border: 1px solid red; */
+}
+
+.searchWrap input{
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 0.5px solid gray;
+}
+
+/* Appended elements classes */
+.contact{
+  margin: 15px 15%;
+}
+
+.contact-image{
+  margin: 0 31%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0.30px solid gray;
+}
+
+.contact-actions{
+  margin: 6px auto;
+}
+
+.contact-actions button{
+  padding: 3px 3px;
+  margin: 0 3px;
+}
+
+.contact-info{
+  margin: 0 12%;
+}
+
+.contact-info h2{
+  font-size: 16px;
+  margin: 3px auto;
+}
+
+.contact-info .small-letters{
+  font-size: 14px;
+  padding-top: 5px;
+}
+/* Appended elements ends here */
+
+* button{
+  background-color: rgb(86, 109, 201);
+  border: 0.5px solid gray;
+}
+
+* button:hover{
+  background-color: rgb(255, 255, 255);
+}
+
+.cancel{
+  padding: 0.6rem;
+  margin: 0 auto;
+  background-color: rgb(191, 44, 44);
+}
   
   label {
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  input[type="text"], input[type="email"] {
-    margin: 10px 20%;
-    border-radius: 5px;
-    border: none;
-    padding: 15px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  }
-
-  button[type="button"] {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(74, 74, 225);
-    border: none;
-  }
-
-  button[type="button"]:hover{
-    background-color: rgb(35, 35, 221);
-  }
-
-
   .imageTag{
     width: 60px;
     height: 60px;
@@ -76,10 +210,3 @@ body{
   .phoneNumTag{
     font-size: 14px;
   }
-
-  .addBtn{
-    margin: 0.65rem 30%;
-  }
-
-
-  

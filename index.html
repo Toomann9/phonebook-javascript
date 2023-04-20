@@ -11,24 +11,43 @@
 
     <div class="container">
 
-        <div class="nav">
-            <h1>Phonebook</h1>
+      <div class="header">
+        <h1>My Phonebook</h1>
+      </div>
+
+      <div class="inner-wrapper">
+
+        <div class="left-aside">
+          <button class="left-button" id="addContactBtn">Add New</button>
         </div>
 
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="phone">Phone:</label>
-          <input type="text" id="phone" name="phone" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="image">Image:</label>
-          <input type="file" id="image" name="image" accept="image/*">
-          <button type="button" onclick="addContact()" class="addBtn">Add Contact</button>
-        </form>
-        <div>
-          <input type="text" id="search" onkeyup="searchContacts()" placeholder="Search for contacts">
+        <div class="right-aside">
+
+          <form id="contactForm" class="addForm" style="display: none;">
+            
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            <button type="button" onclick="addContact()" class="addBtn" id="right-button">Done</button>
+            <button type="button" id="cancelBtn" class="cancel">Cancel</button>
+          </form>
         </div>
+
+      </div>
+
+      <div class="searchWrap">
+        <input type="text" id="searchInput" name="search" placeholder="Search..." />
+      </div>
+    
         <ul id="contact-list">
         </ul>
       </div>
@@ -36,6 +55,7 @@
         <img class="modal-content" id="modal-image">
     </div>
 
-    <script src="./app.js"></script>
+    <script src="./new.js"></script>
+    <!-- <script src="./app.js"></script> -->
 </body>
 </html>
